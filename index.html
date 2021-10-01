@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <form action="mi_servidor">
+        <fieldset>
+            <legend>Datos persona</legend>
+            <label for="nombre">Nombre</label><br />
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/><br />
+
+            <label for="apellido">Apellido</label><br />
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required/><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" required/><br />
+
+            <label for="edad">Edad</label><br />
+            <input type="number" id="edad" name="edad" required><br />
+
+            <label for="">Genero</label><br/>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br />
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br />
+
+            <label for="">Selecciona tu musica favorita</label><br />
+            <input type="checkbox" id="musica clasica" name="musica" value="clasica">
+            <label for="clasica">Clasica</label><br />
+            <input type="checkbox" id="jazz" name="musica" value="jazz">
+            <label for="jazz">Jazz</label><br />
+            <input type="checkbox" id="salsa" name="musica" value="salsa">
+            <label for="salsa">Salsa</label><br />
+            <input type="checkbox" id="champeta" name="musica" value="champeta">
+            <label for="champeta">Champeta</label><br />
+
+            <label for="">Selecciona tu auto favorito</label><br />
+            <select name="autos" id="autos">
+                <option value="volvo">Volvo</option>
+                <option value="audi" selected>Audi</option>
+                <option value="mazda">Mazda</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+                <option value="bmw">BMW</option>
+            </select><br />
+
+            <label for="">Comentarios</label><br />
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br />
+
+            <label for="apellido">Password</label><br />
+            <input type="password" id="password" name="password" required/><br />
+
+            <input type="submit" value="Enviar"" />
+            <input type="submit" formnovalidate value="Enviar sin validar">
+        </fieldset>
+    </form>
+</body>
+</html>
