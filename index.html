@@ -11,6 +11,12 @@
     <form action="mi_servidor"><!--autocomplete sirve para evitar que se autocompleten datos-->
         <fieldset>
             <legend>Datos persona</legend>
+
+            <label for="idPersona">Id Persona</label><br/>
+            <input type="text" id="idPersona" name="idPersona" value="100" readonly disabled><br/>
+
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+
             <label for="nombre">Nombre</label><br />
             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/><br />
 
@@ -57,6 +63,7 @@
 
             <input type="submit" value="Enviar"" />
             <input type="submit" formnovalidate value="Enviar sin validar">
+            <input type="reset" value="Reestablecer">
         </fieldset>
     </form>
 </body>
